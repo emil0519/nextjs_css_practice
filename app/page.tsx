@@ -1,4 +1,9 @@
-/** Add your relevant code here for the issue to reproduce */
+import { Header } from "./component/header";
+
 export default function Home() {
-  return <div className="text-lg bg-red-500">hello world</div>;
+  return (
+    <main>
+      <Header />
+    </main>
+  );
 }
