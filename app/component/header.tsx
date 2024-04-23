@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Hamburger } from "./hamburger";
+import { Logo } from "./logo";
 
 export const Header = (): React.ReactElement => {
   const [isOpen, setIsopen] = useState<boolean>(false);
@@ -11,7 +12,7 @@ export const Header = (): React.ReactElement => {
           <Hamburger isOpen={isOpen} />
         </div>
         <h1 className="text-2xl font-bold">白頭翁不吃小米</h1>
-        <div>logo</div>
+        <Logo />
       </div>
     </nav>
   );
