@@ -1,9 +1,10 @@
 import { Header } from "./component/header";
+import { title, navItems } from "./constant";
 
 export default function Home() {
   return (
     <main>
-      <Header />
+      <Header title={title} navItems={navItems} />
     </main>
   );
 }
