@@ -2,13 +2,17 @@
 import { useState } from "react";
 import { Hamburger } from "./hamburger";
 import { Logo } from "./logo";
+import { NavItemListType } from "../type";
 
 interface PropsType {
   title: string;
-  navItems: string[];
+  navItemList: NavItemListType[];
 }
 
-export const Header = ({ title, navItems }: PropsType): React.ReactElement => {
+export const Header = ({
+  title,
+  navItemList,
+}: PropsType): React.ReactElement => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
@@ -25,11 +29,15 @@ export const Header = ({ title, navItems }: PropsType): React.ReactElement => {
       <div
         className={`flex flex-col my-4 gap-3 transition-all duration-200 ease-in ${isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}
       >
-        {navItems.map((nav) => (
+        {navItemList.map((nav) => (
           <div className="flex justify-center items-center cursor-pointer text-lg hover:text-[#AA6666]">
-            <span className="hover:border-b-2 hover:border-b-solid hover:border-b-[#AA6666]">
-              {nav}
-            </span>
+            <a
+              href={nav.anchor}
+              onClick={() => setIsOpen(false)}
+              className="hover:border-b-2 hover:border-b-solid hover:border-b-[#AA6666]"
+            >
+              {nav.text}
+            </a>
           </div>
         ))}
       </div>

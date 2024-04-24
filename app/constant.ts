@@ -1,12 +1,12 @@
-import { ParagraphDataType } from "./type";
+import { ParagraphDataType, NavItemListType } from "./type";
 
 export const title = "白頭翁不吃小米";
 
-export const navItems = [
-  "白頭翁的特性",
-  "白頭翁的故事",
-  "白頭翁的美照",
-  "白頭翁的危機",
+export const navItemList: NavItemListType[] = [
+  { text: "白頭翁的特性", anchor: "#feature" },
+  { text: "白頭翁的故事", anchor: "" },
+  { text: "白頭翁的美照", anchor: "" },
+  { text: "白頭翁的危機", anchor: "" },
 ];
 
 export const paragraphList: ParagraphDataType[] = [
