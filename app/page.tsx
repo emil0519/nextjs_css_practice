@@ -5,13 +5,18 @@ import { title, navItemList, paragraphList } from "./constant";
 
 export default function Home() {
   return (
-    <main>
+    <main className="flex flex-col lg:flex-row">
       <Header title={title} navItemList={navItemList} />
-      <Banner />
-      <div className="flex flex-col" id="feature">
-        {paragraphList.map((paragraphData) => (
-          <Paragraph paragraphData={paragraphData} key={paragraphData.title} />
-        ))}
+      <div className="block lg:flex lg:flex-col lg:flex-auto">
+        <Banner />
+        <div className="flex flex-col" id="feature">
+          {paragraphList.map((paragraphData) => (
+            <Paragraph
+              paragraphData={paragraphData}
+              key={paragraphData.title}
+            />
+          ))}
+        </div>
       </div>
     </main>
   );

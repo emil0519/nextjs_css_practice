@@ -4,9 +4,9 @@ export const Banner = (): React.ReactElement => (
     <Image
       src="/banner.jpeg"
       alt="Banner of Pulsatilla"
-      width={900}
+      width={1200}
       height={620}
-      className="block md:hidden object-position-[52%_66%] object-none h-full"
+      className="block lg:hidden object-position-[52%_66%] object-none h-full"
     />
     <h1 className="text-white text-4xl font-bold absolute top-[16%] right-[15%] w-fit text-right">
       白頭翁

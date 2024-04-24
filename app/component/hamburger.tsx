@@ -3,7 +3,8 @@ export const Hamburger = ({
 }: {
   isOpen: boolean;
 }): React.ReactElement => (
-  <button className="flex flex-col justify-between h-6 w-6 z-3">
+  <button className="flex flex-col justify-between h-6 w-6 z-3 lg:hidden">
+    {/* strokes of hamburger */}
     <div
       className={`h-1 w-full bg-black transition-all duration-200 ${isOpen && "transform translate-y-3 rotate-45"}`}
     ></div>
