@@ -8,18 +8,10 @@ export default function Home() {
     <main>
       <Header title={title} navItemList={navItemList} />
       <Banner />
-      <div className="flex flex-col">
-        {paragraphList.map((paragraphData, index) =>
-          index === 0 ? (
-            <div id="feature">
-              <Paragraph paragraphData={paragraphData} />
-            </div>
-          ) : (
-            <div>
-              <Paragraph paragraphData={paragraphData} />
-            </div>
-          ),
-        )}
+      <div className="flex flex-col" id="feature">
+        {paragraphList.map((paragraphData) => (
+          <Paragraph paragraphData={paragraphData} key={paragraphData.title} />
+        ))}
       </div>
     </main>
   );

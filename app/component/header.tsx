@@ -30,7 +30,10 @@ export const Header = ({
         className={`flex flex-col my-4 gap-3 transition-all duration-200 ease-in ${isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}
       >
         {navItemList.map((nav) => (
-          <div className="flex justify-center items-center cursor-pointer text-lg hover:text-[#AA6666]">
+          <div
+            className="flex justify-center items-center cursor-pointer text-lg hover:text-[#AA6666]"
+            key={nav.text}
+          >
             <a
               href={nav.anchor}
               onClick={() => setIsOpen(false)}
