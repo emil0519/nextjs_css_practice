@@ -15,7 +15,7 @@ export const Banner = (): React.ReactElement => (
       <br />
       bulbul)
     </h1>
-    <h3 className="text-white text-lg absolute bottom-[0] right-[6%] w-[90%] font-[800]">
+    <h3 className="text-white text-lg absolute bottom-[10%] right-[6%] w-[90%] font-[800]">
       又名白頭鵯。以果實、昆蟲為主食，無法消化小米、穀類。平均壽命約 8~10 年。
     </h3>
     {/* color overlay for better text display */}
