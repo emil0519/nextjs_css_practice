@@ -6,7 +6,6 @@
     A mock on simple landing website with RWD.
     <br/>
     <br/>
-    <a href="https://nextjs-chart-delta.vercel.app/">View Demo</a>
   </p>
 </div>
 <hr>
