@@ -5,7 +5,7 @@ export const Paragraph = ({
 }: {
   paragraphData: ParagraphDataType;
 }): React.ReactElement => (
-  <section className="bg-[#DCCCBC] flex py-7 items-center justify-center gap-8">
+  <section className="flex py-7 items-center justify-center gap-8">
     <h2
       style={{ writingMode: "vertical-rl", letterSpacing: "16px" }}
       className="font-bold text-4xl relative"

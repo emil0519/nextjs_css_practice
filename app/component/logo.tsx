@@ -2,7 +2,7 @@ export const Logo = () => {
   return (
     <div
       className="size-8 rounded-full shadow-[0_1px_3px_#6C7A89]  flex 
-    items-center justify-center bg-white static lg:absolute lg:size-16 lg:top-[88%] lg:left-[25%]"
+    items-center justify-center z-[2] bg-white static lg:absolute lg:size-16 lg:top-[6%] lg:left-[92%]"
     >
       <div className="relative size-5 rotate-[-1deg] lg:size-8">
         {/* black section */}

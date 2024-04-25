@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <main className="flex flex-col lg:flex-row">
       <Header title={title} navItemList={navItemList} />
-      <div className="block lg:flex lg:flex-col lg:flex-auto">
+      <div className="flex flex-col lg:flex-auto">
         <Banner />
-        <div className="flex flex-col" id="feature">
+        <div className="flex flex-col bg-[#DCCCBC] flex-1" id="feature">
           {paragraphList.map((paragraphData) => (
             <Paragraph
               paragraphData={paragraphData}
